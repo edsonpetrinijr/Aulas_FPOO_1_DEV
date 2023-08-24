@@ -20,12 +20,14 @@ public class TesteDasClasses {
         
         System.out.println(edson.toString());
         
-        Carro civic = new Carro("Civic", "Honda", "Prata", 2022, 4);
-        Carro mustang = new Carro("Mustang", "Ford", "Vermelho", 2023, 4);
-
         System.out.println("");
         
+        Carro civic = new Carro("Civic", "Honda", CorEnum.PRATA, 2022, 4, MarchaEnum.NEUTRO);
+        Carro mustang = new Carro("Mustang", "Ford", CorEnum.VERMELHO, 2023, 4, MarchaEnum.PRIMEIRA_MARCHA);
+        
         civic.ligar();
+        civic.trocarMarcha(MarchaEnum.MARCHA_RE);
+        civic.trocarMarcha(MarchaEnum.PRIMEIRA_MARCHA);
         civic.acelerar(50);
         civic.acelerar(40);
         
