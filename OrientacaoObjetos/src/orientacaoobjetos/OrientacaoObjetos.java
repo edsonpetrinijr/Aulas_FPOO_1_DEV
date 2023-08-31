@@ -8,7 +8,7 @@ package orientacaoobjetos;
  *
  * @author Aluno
  */
-public class OrientacaoObjetos {    
+public class OrientacaoObjetos {
 
     /**
      * @param args the command line arguments
